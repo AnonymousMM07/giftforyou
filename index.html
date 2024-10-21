@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для тебя</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Нажми на кнопку, чтобы получить сюрприз!</h1>
+            <button id="revealButton" onclick="revealRose()">Нажми сюда</button>
+            <div id="roseSection" class="hidden">
+                <img src="roses.png" alt="Розочки" class="rose-image">
+                <h2>Для тебя!</h2>
+                <div id="subText"></div>
+            </div>
+            <div class="initials">
+                <p>M.M.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

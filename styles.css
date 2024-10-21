@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(145deg, #ff9a9e, #fad0c4);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #d63447;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d63447;
+}
+
+#roseSection {
+    margin-top: 30px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.rose-image {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 10px;
+    animation: roseAppear 2s ease-out forwards;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #d63447;
+    animation: textAppear 2.5s ease-out forwards;
+}
+
+#subText {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #d63447;
+    opacity: 0.8;
+}
+
+.initials {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.initials p {
+    font-size: 2rem;
+    color: #d63447;
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+@keyframes roseAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes textAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .rose-image {
+        width: 150px;
+    }
+}
